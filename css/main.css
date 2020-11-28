@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
 }
 
 
@@ -23,14 +24,41 @@ body {
   padding: 2% 0;
 }
 
+.quiz__question{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.quiz__timer{
+  margin: 12px 0;
+}
+
+.quiz__answer{
+  outline: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 1.5rem;
+  padding: 10px 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.quiz__next{
+  outline: none;
+  color: black;
+  display: flex;
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+}
+
 
 .space-above {
   margin-top: 1em;
 }
-#player-2,#player-3,#player-1{
-  position: relative;
-  left:150px; top:200px;
-}
+
 
 .quiz__question{
  display: flex;
@@ -41,11 +69,16 @@ body {
   display: flex;
   justify-content: center;
 }
-.player {
 
+#players{
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+.player {
   align-self: baseline;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
 }
 
 .name {
@@ -62,7 +95,7 @@ body {
 }
 
 .name.editable-click:hover {
-  border-bottom: dashed 1px #0088cc;
+  border-bottom: dashed 3px #0088cc;
 }
 
 .score {
@@ -108,4 +141,9 @@ body {
 
 #footer a, #footer a:visited {
   color: #555;
+}
+
+.glyphicon-trash{
+  color: #fff;
+  box-shadow: 4px 4px 5px red;
 }

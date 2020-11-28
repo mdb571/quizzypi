@@ -4,9 +4,14 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>NAME OF APP</title>
+    <title>QuizzyPi</title>
     <link
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
     <link href="css/bootstrap-editable.css" rel="stylesheet" />
@@ -20,18 +25,23 @@
       loop
       muted
     ></video>
-    <div class="quiz__heading"><h1>Name of game</h1></div>
+    <div class="quiz__heading"><h1>QuizzyPi-😎💲</h1></div>
 
     <div class="container-fluid">
       <div class="quiz__question">
-        ??<h2>WHich is the first INdian prime minister</h2>??
+        ??
+        <h2></h2>
+        ??
       </div>
       <div class="quiz__timer">
-        <span id="timer"> <span id="time">30</span>Seconds </span>
+        <span id="timer"> <span id="time">30</span>:Seconds </span>
       </div>
+      <button class="quiz__answer">Answer</button>
 
       <div id="players" class="row text-center"></div>
     </div>
+
+    <button class="quiz__next">Next</button>
 
     <div id="reset">
       <a href="#" data-toggle="modal" data-target="#reset-modal"
@@ -92,5 +102,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/bootstrap-editable.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
