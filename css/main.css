@@ -1,8 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
-  background-image : url("../img/maxresdefault.jpg");
-  padding: 6em 0;
   color: #fff;
 }
+
+.bg__video{
+  object-fit: cover;
+  width:100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+.quiz__heading{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 2% 0;
+}
+
 
 .space-above {
   margin-top: 1em;
@@ -12,8 +32,14 @@ body {
   left:150px; top:200px;
 }
 
-.question{
-  align-content: center;
+.quiz__question{
+ display: flex;
+ justify-content: center;
+}
+
+.quiz__timer{
+  display: flex;
+  justify-content: center;
 }
 .player {
 

@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Scoreboard</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-editable.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NAME OF APP</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap-editable.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
   </head>
   <body>
+    <video
+      class="bg__video"
+      src="./video/video.mp4"
+      autoplay
+      loop
+      muted
+    ></video>
+    <div class="quiz__heading"><h1>Name of game</h1></div>
+
     <div class="container-fluid">
-      <div class="question">
-        <p>WHich is the first INdian prime minister
-        </p>
-        <div>
-          <span id="timer">
-            <span id="time">30</span>Seconds      
-          </span>
-        </div>
+      <div class="quiz__question">
+        ??<h2>WHich is the first INdian prime minister</h2>??
       </div>
-      <div id="players" class="row text-center">
+      <div class="quiz__timer">
+        <span id="timer"> <span id="time">30</span>Seconds </span>
       </div>
+
+      <div id="players" class="row text-center"></div>
     </div>
 
     <div id="reset">
-      <a href="#" data-toggle="modal" data-target="#reset-modal"><i class="glyphicon glyphicon-trash"></i></a>
+      <a href="#" data-toggle="modal" data-target="#reset-modal"
+        ><i class="glyphicon glyphicon-trash"></i
+      ></a>
     </div>
     <div id="reset-modal" class="modal fade">
       <div class="modal-dialog">
@@ -33,24 +44,45 @@
           <div class="modal-header">
             <h4 class="modal-title">Reset scores</h4>
           </div>
-          <div class="modal-body" style="color: black;">
+          <div class="modal-body" style="color: black">
             Do you really want to reset all scores to zero?
           </div>
           <div class="modal-footer">
-            <button type="button" id="reset-button" class="btn btn-danger" data-dismiss="modal">Reset scores</button>
-            <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+            <button
+              type="button"
+              id="reset-button"
+              class="btn btn-danger"
+              data-dismiss="modal"
+            >
+              Reset scores
+            </button>
+            <button type="button" class="btn" data-dismiss="modal">
+              Cancel
+            </button>
           </div>
         </div>
       </div>
     </div>
-    
+
     <script id="playerTemplate" type="text/html">
       <div id="player-{{:player}}" class="player col-sm-3">
         <h2 class="name"></h2>
         <div id="score-{{:player}}" class="score"></div>
         <div class="buttons btn-group" role="group">
-          <button type="button" data-index="{{:player}}" class="btn btn-lg btn-success plus"><i class="glyphicon glyphicon-check"></i></button>
-          <button type="button" data-index="{{:player}}" class="btn btn-lg btn-danger minus"><i class="glyphicon glyphicon-remove"></i></button>
+          <button
+            type="button"
+            data-index="{{:player}}"
+            class="btn btn-lg btn-success plus"
+          >
+            <i class="glyphicon glyphicon-check"></i>
+          </button>
+          <button
+            type="button"
+            data-index="{{:player}}"
+            class="btn btn-lg btn-danger minus"
+          >
+            <i class="glyphicon glyphicon-remove"></i>
+          </button>
         </div>
       </div>
     </script>
