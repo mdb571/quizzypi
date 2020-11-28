@@ -91,19 +91,19 @@ var Scoreboard = (function() {
   return _this;
 }).call($);
 
-var counter = 30;
-var interval = setInterval(function() {
-    counter--;
-    // Display 'counter' wherever you want to display it.
-    if (counter <= 0) {
-     		clearInterval(interval);
-      	$('#timer').html("<h3>Count down complete</h3>");  
-        return;
-    }else{
-    	$('#time').text(counter);
-      console.log("Timer --> " + counter);
-    }
-}, 1000);
+// var counter = 30;
+// var interval = setInterval(function() {
+//     counter--;
+//     // Display 'counter' wherever you want to display it.
+//     if (counter <= 0) {
+//      		clearInterval(interval);
+//       	$('#timer').html("00");  
+//         return;
+//     }else{
+//     	$('#time').text(counter);
+      
+//     }
+// }, 1000);
 $(function() {
   Scoreboard.bind();
 });
