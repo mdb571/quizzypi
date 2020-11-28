@@ -29,12 +29,13 @@ displayData =(res)=>{
 }
 
 startTimer = () =>{
+    time.innerHTML = 30;
     const x = setInterval(() => {
         time.innerHTML = Number(time.innerHTML) - 1;
     }, 1000)
     setTimeout(() => {
         clearInterval(x);
-        // time.innerHTML = 30;
+        time.innerHTML = 30;
         // quizQuestion();
     }, 30 * 1000)
 }
