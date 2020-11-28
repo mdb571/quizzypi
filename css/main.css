@@ -1,0 +1,85 @@
+body {
+  background-image : url("../img/maxresdefault.jpg");
+  padding: 6em 0;
+  color: #fff;
+}
+
+.space-above {
+  margin-top: 1em;
+}
+#player-2,#player-3,#player-1{
+  position: relative;
+  left:150px; top:200px;
+}
+
+.question{
+  align-content: center;
+}
+.player {
+
+  align-self: baseline;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.name {
+  height: 2.5em;
+  overflow: hidden;
+}
+
+.name.editable-unsaved {
+  font-weight: 250;
+}
+
+.name.editable-click {
+  border-bottom: none;
+}
+
+.name.editable-click:hover {
+  border-bottom: dashed 1px #0088cc;
+}
+
+.score {
+  font-size: 60pt;
+  padding-bottom: 0.5em;
+}
+
+.buttons {
+  margin-bottom: 2em;
+}
+
+.disabled {
+  background-color: #777;
+}
+.buzzed {
+  background-color: rgb(255, 60, 0);
+}
+#footer {
+  color: #333;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0.5em;
+}
+
+#reset {
+  position: fixed;
+  top: 0.5em;
+  left: 0.5em;
+}
+
+#help {
+  position: fixed;
+  top: 0.5em;
+  right: 0.5em;
+}
+
+#help a, #help a:visited, #reset a, #reset a:visited {
+  color: #555;
+  font-size: 18pt;
+  outline: none;
+}
+
+#footer a, #footer a:visited {
+  color: #555;
+}
